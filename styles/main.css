@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+    color: wheat;
+    font-family: 'Kalam', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -30px;
+    margin-top: -10px;
+}
+
+.mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    border: 1px solid black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: azure;
+    font-family: 'Kalam', cursive;
+}
+
+.board div {
+    border: .2px solid rgb(240, 240, 240);
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.board-size {
+    font-weight: 800;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#footer-github {
+    height: 15px;
+    width: 15px;
+}

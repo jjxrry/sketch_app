@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.png">
+    <title>Sketch App</title>
+</head>
+<body>
+    <header>
+        <h1>Sketch It</h1>
+    </header>
+    <div class="mode">Pen: ON</div>
+    <div id="main">
+        <div class="content">
+            <div id="board" class="board"></div>
+            <div class="buttons">
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('grey')">Gray</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="changeColor('white')">Eraser</button>
+                <button onclick="resetBoard()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div class="board-size">
+        <h2>Adjust Board Dimensions</h2>
+        <input type="range" min="2" max="100" value="16" onchange="changeSize(this.value)">
+    </div>
+
+    <footer>
+        <div class="footer-line">
+            <a href="https://github.com/jjxrry"><img src="./assets/github.png" id="footer-github"></a>
+            <p>by Jerry G</p>
+        </div>
+    </footer>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
